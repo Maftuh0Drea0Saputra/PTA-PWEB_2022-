@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Membuat Form Validasi</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<nav>
+		<input type="checkbox" id="check">
+		<label for="check">
+			<i id="btn"><ion-icon name="barcode-outline"></ion-icon></i>
+			<i id="cancel"><ion-icon name="close-circle-outline"></ion-icon></ion-icon></i>
+		</label>
+
+		<img src="wide.png">
+		<ul>
+			<li ><a href="home.html">Home</a></li>
+			<li ><a href="index.html">Lakukan Transaksi</a></li>
+			<li ><a href="pog.php">Riwayat Transaksi</a></li>
+		</ul>
+	</nav>
+	<main>
+		<div class="background">
+			<center><img src="wide.png"></center>
+			<div class="box">
+				<form action="log.php" method="POST">
+					<div>
+						<label> Nama Barang :</label>
+						<input type="text"  name="nama"  placeholder="ex:Buku">
+					</div>
+                    <div>
+						<label> Warna :</label>
+						<input type="text"  name="warna"  placeholder="ex:Merah">
+					</div>
+                    <div>
+						<label> Jumlah Barang :</label>
+						<input type="number"  name="jb"  placeholder="ex:3">
+					</div>
+					
+                    <div>
+                        <label>Punya Membership :</label>
+                        <br>
+                        <input type="radio" name="member" value="male" />
+                            <label> Punya </label>
+                        <input type="radio" name="member" value="female" />
+                            <label> Tidak Punya </label>
+                    <div>
+                    <div>
+						<label> Biaya Yang Di Bayarkan :</label>
+						<input type="number" name="biaya" id="biaya">
+					</div>
+					<div>
+						<input type="submit" name="submit"	value="Proses" class="tombol">
+						<input type="submit" value="Batal" class="tombol">
+					</div>
+				</form>
+			</div>
+
+		</div>
+	</main>
+	<footer>
+        <center><label id="footer">Made By Me</label></center>
+    </footer>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

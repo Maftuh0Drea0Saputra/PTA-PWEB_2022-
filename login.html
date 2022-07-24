@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="background">
+        <center><h2>Silahkan Isi Data</h2></center>
+        <div class="box">
+            <form action="home.html" method="POST" onSubmit="validasi()">
+                <div>
+                    <label> Nama :</label>
+                    <input type="text"  name="nama" placeholder="Nama" id="nama">
+                </div>
+                <div>
+                    <label> Email :</label>
+                    <input type="email" name="email" placeholder="Email Aktif" id="email">
+                </div>
+                <div>
+                    <label>Jenis kelamin:</label>
+                    <br>
+                    <input type="radio" name="jenis_kelamin" value="male" />
+                        <label for="male">Laki-laki </label>
+                    <input type="radio" name="jenis_kelamin" value="female" />
+                        <label for="female">Perempuan </label>
+                <div>
+                    <label> Alamat :</label>
+                    <textarea cols="40" rows="5" placeholder="Alamat" name="alamat" id="alamat"></textarea>
+                </div>
+                <div>
+                    <label> Password :</label>
+                    <input type="text" name="password" id="password">
+                </div>
+                <div>
+                    <input type="submit" name="submit"	value="Masuk" class="tombol">
+                    <input type="submit" value="Reset" class="tombol">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="validasi.js"></script>
+</body>
+</html>

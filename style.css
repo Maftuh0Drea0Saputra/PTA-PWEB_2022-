@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&display=swap');
+
+
+*{
+  font-family: 'Edu SA Beginner';
+  list-style:none ;
+  text-decoration: none;
+}
+
+body {
+  background: url('bc.jpg');
+}
+nav{
+  height: 80px;
+  background: #EAF6F6;
+  border-radius: 10px;
+}
+
+nav img{
+  width: 57px;
+  position: absolute;
+  top: 17px;
+  left: 8%;
+}
+
+nav ul{
+  float: right;
+  margin-right: 25px;
+}
+
+nav ul li{
+  display: inline-block;
+  line-height: 40px;
+  margin: 0 15px;
+
+}
+
+nav ul li a{
+  position: relative;
+  color: #555;
+  font-size: 18px;
+  padding: 5px 0;
+  text-transform: uppercase;
+}
+
+nav ul li a:before{
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 100%;
+  background:#555;
+  transform: scalex(0);
+  transform-origin: right;
+  transition: transform .4s linear;
+}
+
+nav ul li a:hover:before{
+  transform: scalex(1);
+  transform-origin: left;
+}
+
+label #btn,
+label #cancel{
+  color: #555;
+  font-size: 30px;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check{
+  display: none;
+}
+
+@media (max-width: 944px){
+  nav image{
+    left: 6%;
+    top: 20px;
+    width: 130px;
+  }
+  nav ul li a{
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 944px){
+  label #btn{
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #EAF6F6 ;
+    top: 80px;
+    left: -100%;
+    text-align:center;
+    transition: all .5s;
+    border-radius: 20px;
+  }
+
+  nav ul li{
+    display: block ;
+    margin:  50px 0;
+    line-height: 30px;
+  }
+
+  nav ul li a{
+    font-size: 20px;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+  #check:checked ~ label #btn{
+    display: none;
+  }
+  #check:checked ~ label #cancel{
+    display: block;
+  }
+}
+
+main img{
+  width: 57px;
+  position: static;
+  top: 17px;
+}
+
+h2 {
+  color: black;
+}
+
+article{
+  width: 65%;
+  height: 330px;
+  margin: 1em auto 2em 2em;
+  float: left;
+  background: #EAF6F6;
+  padding: 10px;
+  border: 1px solid #faebd7;
+  border-radius: 10px;
+}
+
+aside{
+  width: 25%;
+  height: 330px;
+  margin: 1em auto 2em auto;
+  float: left;
+  background: #66BFBF;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.background{
+  padding: 1em;
+  margin: 1em auto 2em auto;
+  width: 30em;
+  background: #EAF6F6 ;
+  border-radius: 10px;
+}
+
+.box {
+  padding: 1em;
+  margin: 2em auto;
+  width: 17em;
+  background: #FFFFFF;
+  border-radius: 10px;
+}
+
+label {
+  font-size: 10pt;
+  color: #555;
+  position: static;
+}
+
+input[type="number"],
+input[type="email"],
+input[type="text"],
+option,select,textarea{
+  padding: 8px;
+  width: 95%;
+  background: #efefef;
+  border: 0;
+  font-size: 10pt;
+  margin: 6px 0px;
+}
+
+.tombol {
+  background: #66BFBF;
+  color: #fff;
+  border: 0;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.tombol a {
+  text-decoration: none;
+  color: white;
+}
+
+.tombol a:hover{
+  color:#555;
+}
+.tombol:hover{
+  background-color: aquamarine;
+  color: black;
+  transition: 0.5s;
+}
+
+footer {
+  bottom: 0px;
+  width: 100%;
+  background: #EAF6F6;
+  float: left;
+  border-radius: 10px;
+}
